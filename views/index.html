@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Thermostatic</title>
+  <meta name="description" content="Thermostatic">
+  <meta name="author" content="Jesus">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <script src="jquery-3.3.1.min.js"></script>
+  <div id="gui"class="Gui">
+    <div class="Logo">
+      <h3>Thermostatic</h3>
+    </div>
+  <section>
+   <div class="temperature"id="tempdisplay">
+     <br>
+    <h1 id="current_temp"></h1>
+   </div>
+    <div class="settings"id="settings">
+      <p>
+        <button class="upButton"id="temp_up">+</button>
+        <button class="downButton"id="temp_down">-</button>
+        <br><br><br>
+        <button class="reset"value="reset">Reset</button>
+        power saving mode is <span id="power-saving-status">on</span>
+        <button id="powersaving">PSM</button>
+      </p>
+    </div> 
+  </div>
+</section>
+  <script src="../src/thermostat.js"></script>
+  <script src="js/interface.js"></script>
+</body>
+</html>
